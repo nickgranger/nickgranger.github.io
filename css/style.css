@@ -1,0 +1,295 @@
+@font-face {
+    font-family: Rob;
+    src: url(../font/Rob.ttf);
+}
+
+@font-face {
+    font-family: Kollera;
+    src: url(../font/Kollera.otf);
+}
+
+:root {
+    --base-size: 1rem;
+    --type-scale: 1.44;
+    --h5:calc(var(--base-size) * var(--type-scale));
+    --h4:calc(var(--h5) * var(--type-scale));
+    --h3:calc(var(--h4) * var(--type-scale));
+    --h2:calc(var(--h3) * var(--type-scale));
+    --h1:calc(var(--h2) * var(--type-scale));
+  }
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.small{
+    font-family: Rob;
+}
+
+.hero-container{
+    background-image: url(../images/headerBackground.png);
+    height: 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 88%;
+    position: relative;
+}
+
+
+h1, .hero{
+    font-family: Kollera;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+h1{
+    font-size: var(--h1); 
+    
+}
+
+.hero{
+    font-size: var(--h3);
+    text-align: center;   
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav > a{
+    text-decoration: none;
+    margin: 1em;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-family: Kollera;
+}
+
+nav a{
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: scale(1.1); 
+  }
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+footer{
+    background:rgb(181, 181, 181);
+    color: black;
+    height: 100px;
+    font-family: Kollera;
+    
+}
+
+.foot{
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    width: 40%;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px; 
+}
+
+address{
+    text-align: center;
+}
+
+.resume-main{
+    width: 40%;
+    margin: 30px auto;
+    text-align: start;
+    border: 2px solid black;
+    padding: 10px; 
+}
+
+p{
+    padding: 30px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.aboutme{
+    /* height: auto;
+    width: 500px;*/
+    display:block;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.card{
+    width: 550px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    margin: 10px;
+}
+
+.card-img{
+    max-width: 100%;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.BW-Container{
+    width: 75%;
+    margin: 20px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.short-card{
+    max-height: 600px;
+}
+
+.Best-work{
+    height: auto;
+    width: 500px;
+}
+
+.active{
+    color: #df3140;
+    background: white;
+    border-radius: 4px;
+
+}
+
+address{
+    font-size: 1.5em;
+    font-family: Kollera;
+    margin: 0 auto;  
+}
+
+.resume-text{
+    display: flex;
+    justify-content: start;
+    font-family: Kollera;
+}
+
+.text{
+    font-size: large;
+}
+
+p{
+    font-family: Rob;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    font-family: Rob;
+  }
+  
+  li {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .color:hover{
+    color: #df3140;
+    cursor: pointer;
+  }
+
+.facts{
+    font-size: larger;
+}
+
+@media screen and (max-width: 1220px){
+    .hero-container{
+        background-image: url(../images/headerBackground2.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .active{
+        color: #df3140;
+        background: white;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    
+    html{
+        margin-top: 25px;
+    }
+
+    .active{
+        color: #df3140;
+        background: white;
+        border-radius: 4px;
+    }
+    
+    .hero-container{
+        background-image: url(../images/headerBackground3.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 1em;
+    }
+
+    .hero{
+        font-size: 30px;
+    }
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    main{
+        width: 65%;
+    }
+
+    .resume-main{
+        width: 65%;
+    }
+
+
+    .small{
+        font-size: large;
+    }
+    
+
+}
+
+
+
+ 
